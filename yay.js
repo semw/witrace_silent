@@ -9,7 +9,7 @@ const thePayloadYay = async () => {
     }
 
     const maxTries = 20;
-    const delayMs = 1000;
+    const delayMs = 3000;
     let found = false;
 
     for (let i = 0; i < maxTries; i++) {
@@ -28,8 +28,6 @@ const thePayloadYay = async () => {
     if (!found) {
     }
 };
-
-// Step 1: Sanity check and debug before install
 
 // Step 2: Trigger install
 console.log("✅ marketAPI.install is about to be called");
@@ -61,3 +59,4 @@ marketAPI.install({
 console.log("✅ marketAPI.install called successfully");
 // Step 3: Poll until app appears, then launch
 thePayloadYay();
+
